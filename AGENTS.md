@@ -57,5 +57,7 @@ If using pyenv, include `.python-version` (e.g., 3.11) and align Poetry.
 ## Security & Configuration Tips
 
 - Configure Spotify: `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET` (env vars)
-- Storage config via env (e.g., `WHENCEJAM_DB_URL=sqlite:///whencejam.db`)
-- Never commit secrets; use `.env.example` and `python-dotenv` if helpful
+- Database: default to SQLite via `WHENCEJAM_DB_URL=sqlite:///whencejam.db`; override for future Postgres when needed.
+- Migrations: use Alembic; apply with `poetry run alembic upgrade head`.
+- Testing DB: prefer in-memory SQLite (`sqlite+pysqlite:///:memory:`) or a tmp file.
+- Secrets & files: never commit secrets or the SQLite DB file; use `.env.example` and `python-dotenv`.
