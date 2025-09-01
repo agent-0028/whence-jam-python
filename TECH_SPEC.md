@@ -12,3 +12,5 @@
 * There should be facility to manage what version of Python is used
 * Dependencies pulled from pypi.org should be managed with modern best practice dependency management framework for Python
 * The web application and API should use the Flask framework
+* We should use SQLite as a database for early development
+  * We should use patterns or frameworks that will allow for changing to use Postgres in the future
