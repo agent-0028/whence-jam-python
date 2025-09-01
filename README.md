@@ -32,3 +32,24 @@ We gave it the /init command and it did a lot. Wrote up a plan and offered to ju
 
 > [codex]
 > Got it—I’ll pause here. Ready when you want me to proceed or adjust anything.
+
+> Do the first task, it is related to tooling
+
+> [codex]
+> Added pyproject.toml with Poetry and tool configs.
+> What’s included
+> - Poetry metadata: project name, version, license, readme, and src layout packages.
+> - Python version: ^3.11.
+> - Core deps: flask, sqlalchemy, alembic, python-dotenv.
+> - Dev deps: pytest, black, ruff, isort.
+> - Tooling config: Black (88 cols, py311), Ruff (py311, rules E/F/I/UP), isort (Black profile, first-party whencejam).
+> Verification
+> - Run: poetry install
+> - Check versions: poetry run python -V, poetry run black --version, poetry run ruff --version
+> - Optional: make check (will run once tests exist)
+> Want me to proceed with the next task (add .python-version), or adjust dependencies/config?
+
+> Nope...hang tight
+
+> [codex]
+> Understood. I’ll hold. Say the word when you want me to continue.
