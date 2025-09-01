@@ -12,7 +12,8 @@ This document outlines the implementation plan for the whence-jam-python music r
 
 ### Core Implementation
 - [ ] Implement Spotify API integration for music search
-- [ ] Create data storage layer (SQLite database)
+- [ ] Design database abstraction layer for future PostgreSQL migration
+- [ ] Create SQLite database schema and connection handling
 - [ ] Build command line interface for adding recommendations
 - [ ] Implement listing functionality (chronological, newest first)
 - [ ] Add error handling for API failures and invalid inputs
@@ -71,7 +72,9 @@ This document outlines the implementation plan for the whence-jam-python music r
 ## Technical Considerations
 
 - Spotify API rate limiting and error handling
-- Database schema design for scalability
+- Database abstraction design to support SQLite → PostgreSQL migration
+- SQLite file location and backup strategies
 - Configuration management for different environments
 - Security considerations for web and API phases
 - Performance optimization for large recommendation lists
+- Database migration strategy from SQLite to PostgreSQL for production

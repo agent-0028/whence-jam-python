@@ -18,3 +18,6 @@ It generated a CLAUDE.md and in the terminal gave me a summary of a plan.
 > Since this is an early-stage project with no code implementation yet, the file focuses on the architectural foundation from your product and technical specifications rather than specific build commands or detailed code structure.
 
 > Please write a new markdown file listing the tasks you want to do, the plan you just gave me
+
+> I see you have already specified SQLite database. I have updated the tech spec to make this choice explicit and add some details. Please look at 4d2d60b2e6c32ca5575ccf52900a54cfc8e41fd5 and then update your dev plan accordingly if changes are needed.
+
