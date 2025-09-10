@@ -30,8 +30,8 @@ build-backend = "poetry.core.masonry.api"
 [tool.black]
 line-length = 88
 target-version = ["py311"]
-include = "\.(py|pyi)$"
-exclude = """
+include = '\.(py|pyi)$'
+exclude = '''
 /(
     \.git
   | \.venv
@@ -41,7 +41,7 @@ exclude = """
   | .mypy_cache
   | .ruff_cache
 )
-"""
+'''
 
 [tool.isort]
 profile = "black"

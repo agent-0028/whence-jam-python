@@ -3,6 +3,8 @@ An app for knowing who recommended a song or album.
 
 ## Prompts
 
+**9/1/2025**
+
 > /init
 
 We gave it the /init command and it did a lot. Wrote up a plan and offered to just start building things. We never managed to give the next prompt.
@@ -53,3 +55,20 @@ We gave it the /init command and it did a lot. Wrote up a plan and offered to ju
 
 > [codex]
 > Understood. I’ll hold. Say the word when you want me to continue.
+
+**9/9/2025**
+
+This is a new session. Codex does not seem to have a `/resume` like Claude.
+
+So, I am going to prompt it that we are in the resuming something...
+
+> We are resuming a project. The goal is to use the product spec to write some new code. When we left off, you had implemented the fist Task. Do not do anything but read the files in this repo and wait while I verify that the first Task is actually complete.
+
+Manual verification for first Task didn't work great, I have to install poetry with brew, then I'll try the steps again.
+
+Installed poetry (added to my Brewfile) and tried to follow verification steps.
+
+
+> I ran `poetry install` per the steps and got this error: `pyproject.toml is not a valid TOML file. TOMLDecodeError: Unescaped '\' in a string (at line 33, column 14)`. Please fix the error.
+
+> I think that worked! The response was: `Installing the current project: whence-jam-python (0.1.0) whence-jam-python-codex/src/whencejam does not contain any element`, don't do anything more I am going to commit what we have.
