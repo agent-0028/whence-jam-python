@@ -65,6 +65,9 @@ db.sqlite3-journal
 instance/
 .webassets-cache
 
+# Local SQLite database (project default)
+whencejam.db
+
 # Scrapy stuff:
 .scrapy
 

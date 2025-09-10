@@ -90,3 +90,8 @@ Codex was unable to verify, since pyenv doesn't have the right version of Python
 
 Codex updated the verification steps and I ran them myself. Things seem to be working as expected at this point.
 
+> [codex]
+> Want me to proceed with the next task (env scaffolding: .env.example)?
+
+> Yes, please proceed with the next task.
+
