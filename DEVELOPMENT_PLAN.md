@@ -5,12 +5,12 @@ This document outlines the implementation plan for the whence-jam-python music r
 ## Phase One: Command Line Application
 
 ### Setup Tasks
-- [ ] Create `pyproject.toml` with project configuration and dependencies
-  - *Verify*: `pip install -e .` succeeds, dependencies install correctly
+- [x] Create `pyproject.toml` with project configuration and dependencies
+  - *Verify*: `pyenv install 3.12.0`, then `poetry install` succeeds
 - [ ] Set up Python project structure with appropriate modules
   - *Verify*: `python -c "import whence_jam"` succeeds
 - [ ] Configure development dependencies (pytest, ruff, etc.)
-  - *Verify*: `pytest --version`, `ruff --version` show correct versions
+  - *Verify*: `poetry run pytest --version`, `poetry run ruff --version` show correct versions
 - [ ] Create virtual environment setup documentation
   - *Verify*: Follow README instructions from scratch, application runs
 

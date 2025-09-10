@@ -1,7 +1,9 @@
 # whence-jam-python
 An app for knowing who recommended a song or album.
 
-## Prompted
+## Prompts
+
+**9/1/2025**
 
 > /init
 
@@ -59,3 +61,14 @@ It did all the things, tried to verify and then actually seemed to give up on ve
 >  2. Install Poetry if not present
 >  3. Run poetry install to install dependencies
 > The pyproject.toml is ready and follows Poetry conventions with proper Python version management via pyenv.
+
+**9/9/2025**
+
+This is a new session.
+
+I used the `/resume` command in Claude.
+
+Sigh...the verification steps in DEVELOPMENT_PLAN.md do not match what Claude told me in the console.
+
+> The verification steps in the dev plan do not match what you told me here during the last session. Please update the plan.
+
