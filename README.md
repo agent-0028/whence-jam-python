@@ -95,3 +95,34 @@ Codex updated the verification steps and I ran them myself. Things seem to be wo
 
 > Yes, please proceed with the next task.
 
+It did the rest of the "- Environment:" task and I committed the result.
+
+Then...
+
+> [codex]
+>  Want me to continue with the next task? Per the plan, that’s database setup (SQLAlchemy + Alembic, models).
+
+Which is wrong...we are confused. I have an idea...
+
+> I think you are getting confused about what Task we are working on. And since we will need to stop and start this project, we need a better way to keep track of them. You appear to be following the `## Order of Execution` list, but there are "subtasks" in the list above that. We have completed up to `- Environment:`, the next would be `- Structure:`. Please update the task list so you can follow it better. I want to complete each "subtask", verify it and commit the results before proceeding to the next one.
+
+
+> [codex]
+> Updated the task plan to a checkpointed checklist with clear statuses and order.
+> - What changed:
+>     - Added “How To Work This Plan” for start/stop clarity.
+>     - Replaced “Tasks” with “Subtasks (in order)” and marked:
+>     - Tooling, Versions, Environment: COMPLETED
+>     - Structure: NEXT
+>     - Docs, Database, CI, pre-commit: PENDING
+> - 
+> Fixed “Order of Execution” so Structure comes before Database.
+> - 
+> Next subtask:
+>     - Structure: create src/whencejam/{core,cli,web,api}/__init__.py and
+> a basic tests/... skeleton, then verify imports and a smoke test.
+> 
+> Ready to implement the Structure subtask when you’re set to proceed.
+
+It updated things and I am gonna commit and stop for the night.
+
