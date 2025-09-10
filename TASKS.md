@@ -10,8 +10,13 @@ This document lists proposed tasks to align the repo with AGENTS.md and get a pr
 ## Tasks
 - Tooling: Add `pyproject.toml` (Poetry), configure Python `3.11`, and set Black/Ruff/isort in `tool.*` sections.
   - Verify: `poetry install`; `poetry run python -V` shows 3.11; `poetry run black --version`; `poetry run ruff --version`.
-- Versions: Add `.python-version` pinned to `3.11.x` (pyenv-compatible).
-  - Verify: `pyenv version` resolves to 3.11.x in repo; `python -V` matches inside Poetry venv.
+- Versions: Add `.python-version` pinned to `3.11.9` (pyenv-compatible).
+  - Verify:
+    - Install Python: `pyenv install 3.11.9` (one-time) and confirm with `pyenv versions`.
+    - Set local: `pyenv local 3.11.9` at repo root (or rely on the committed `.python-version`).
+    - Point Poetry at 3.11: `poetry env use 3.11.9` (or `poetry env use $(pyenv which python)`).
+    - Check: `pyenv version` shows 3.11.9; `poetry run python -V` prints `Python 3.11.9`.
+    - Note (macOS): install pyenv via Homebrew `brew install pyenv`; if 3.11.9 isn’t available, use the latest 3.11.x and update `.python-version` accordingly.
 - Environment: Add `.env.example` with `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, and `WHENCEJAM_DB_URL` (default `sqlite:///whencejam.db`).
   - Verify: `rg 'WHENCEJAM_DB_URL' .env.example`; load via `poetry run python -c 'import dotenv; dotenv.load_dotenv(); import os; print(os.getenv("WHENCEJAM_DB_URL"))'`.
 - Structure: Create `src/whencejam/{core,cli,web,api}/__init__.py` and a minimal module skeleton.

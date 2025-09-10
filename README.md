@@ -72,3 +72,21 @@ Installed poetry (added to my Brewfile) and tried to follow verification steps.
 > I ran `poetry install` per the steps and got this error: `pyproject.toml is not a valid TOML file. TOMLDecodeError: Unescaped '\' in a string (at line 33, column 14)`. Please fix the error.
 
 > I think that worked! The response was: `Installing the current project: whence-jam-python (0.1.0) whence-jam-python-codex/src/whencejam does not contain any element`, don't do anything more I am going to commit what we have.
+
+> Go ahead and implement the next Task, it is related to versions. 
+
+> [codex]
+> Want me to proceed with the next task (env scaffolding with .env.example)?
+
+> No, not yet, please run the verification steps yourself, then I will commit the results
+
+Codex was unable to verify, since pyenv doesn't have the right version of Python available. So, I am gonna be a dick and make it correct the verification steps.
+
+> [codex]
+> The verification steps should cover everything a dev needs to do to
+> bootstrap this project, so I think the pyenv instructions are missing.
+> Update the Task verification steps. I can tell you I have installed
+> pyenv via Brew, so you should be able to run it.
+
+Codex updated the verification steps and I ran them myself. Things seem to be working as expected at this point.
+
